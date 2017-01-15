@@ -5,6 +5,6 @@ import {Animal} from "./sample";
 describe("Sample", () => {
   it("should exist", () => {
     const fish = new Animal("Nemo")
-    assert.equal('Nemo', fish.name)
+    assert.equal('Nemo', fish.getName())
   })
 })

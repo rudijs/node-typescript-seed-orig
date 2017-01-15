@@ -1,4 +1,10 @@
 export class Animal {
-  public name: string;
+  private name: string;
   constructor(theName: string) { this.name = theName; }
+  getName() {
+    return this.name
+  }
+  getLocation() {
+    return 'Great Barrier Reef'
+  }
 }

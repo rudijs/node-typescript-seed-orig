@@ -9,7 +9,8 @@
     "lint": "tslint --fix src/**/*",
     "lint:watch": "chokidar 'src/**/*.ts' -c 'npm run lint'",
     "test": "mocha dist/*.spec.js",
-    "test:watch": "npm run test -- --watch"
+    "test:watch": "npm run test -- --watch",
+    "coverage": "./bin/code-coverage-report.sh"
   },
   "keywords": [],
   "author": "",
@@ -21,7 +22,10 @@
     "@types/mocha": "^2.2.37",
     "@types/node": "^7.0.0",
     "chokidar-cli": "^1.2.0",
+    "intern": "^3.4.2",
+    "istanbul": "^0.4.5",
     "mocha": "^3.2.0",
+    "remap-istanbul": "^0.8.4",
     "tslint": "^4.3.1"
   }
 }
