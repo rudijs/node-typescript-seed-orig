@@ -1,0 +1,27 @@
+{
+  "name": "node-typescript-seed",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "tsc": "tsc",
+    "tsc:watch": "npm run tsc -- --watch",
+    "lint": "tslint --fix src/**/*",
+    "lint:watch": "chokidar 'src/**/*.ts' -c 'npm run lint'",
+    "test": "mocha dist/*.spec.js",
+    "test:watch": "npm run test -- --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "typescript": "^2.1.5"
+  },
+  "devDependencies": {
+    "@types/mocha": "^2.2.37",
+    "@types/node": "^7.0.0",
+    "chokidar-cli": "^1.2.0",
+    "mocha": "^3.2.0",
+    "tslint": "^4.3.1"
+  }
+}
